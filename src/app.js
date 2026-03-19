@@ -1,6 +1,6 @@
-const express = require('express');
-const cors = require('cors');
-const codigoRoutes = require('./routes/codigo.routes');
+import express from 'express';
+import cors from 'cors';
+import codigoRoutes from './routes/codigo.routes.js';
 
 const app = express();
 
@@ -13,4 +13,4 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
-module.exports = app;
+export default app;

@@ -6,6 +6,4 @@ const getCodigoV1 = (req, res) => {
   });
 };
 
-module.exports = {
-  getCodigoV1
-};
+export { getCodigoV1 };
